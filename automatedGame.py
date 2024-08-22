@@ -172,14 +172,14 @@ def check_buy():
                 print(f"Bought {upgrade}")
                 sleep(0.1)
         except Exception as e:
-            pass  # Silently skip if upgrade is not available
+            pass 
 
 def clicker():
     for _ in range(100):
         cookie.click()
 
 start_time = time()
-buy_interval = 5  # Check for upgrades every 5 seconds
+buy_interval = 5  
 
 while True:
     clicker()
@@ -189,4 +189,4 @@ while True:
         check_buy()
         start_time = current_time
     
-    sleep(0.1)  # Small delay to prevent overwhelming the browser
+    sleep(0.1)  
